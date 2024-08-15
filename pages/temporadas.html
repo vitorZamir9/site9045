@@ -24,16 +24,17 @@
             <p>Veja um resumo das temporadas anteriores da equipe North Lions e nossos destaques.</p>
         </section>
     </div>
-    <footer>
-        <div class="footer-content">
-            <p>Contate-nos: <a href="mailto:contato@northlions9045.com">contato@northlions9045.com</a></p>
-            <p>Instagram: <a href="https://instagram.com/northlions9045" target="_blank">northlions9045</a></p>
-            <div class="social-icons">
-                <a href="https://facebook.com/northlions9045" target="_blank">📘</a>
-                <a href="https://twitter.com/northlions9045" target="_blank">🐦</a>
-                <a href="https://instagram.com/northlions9045" target="_blank">📸</a>
-            </div>
-        </div>
+    <footer id="footer">
+        <!-- Footer content will be loaded here -->
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("../footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                });
+        });
+    </script>
 </body>
 </html>

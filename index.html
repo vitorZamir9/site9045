@@ -43,26 +43,18 @@
             </div>
         </div>
         <div class="info-image">
-            <div class="image-box">Imagem</div>
+            <img src="images/northtop.jpeg" alt="Descrição da Imagem" class="info-image-content">
         </div>
     </div>
-    <footer>
-        <div class="footer-content">
-            <div class="social-icons">
-                <a href="https://www.instagram.com/northlionsfrc?igsh=MTB6YjU4bGo1aHdmaA==" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.tiktok.com/@northlions_frc9045" target="_blank">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-                <a href="https://www.youtube.com/@northlions9045" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="mailto:northlions9045@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer will be loaded here -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.body.insertAdjacentHTML('beforeend', data);
+                });
+        });
+    </script>
 </body>
 </html>
