@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 .info-image {
-    flex: 0 0 100%; /* Ajuste a largura para 100% em telas pequenas */
+    flex: 0 0 50%; /* Ajuste a largura para 100% em telas pequenas */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +117,7 @@ nav a:hover {
 
 .image-box {
     width: 25%; /* Ajusta a largura para 100% */
-    max-width: 900px; /* Define o tamanho máximo da imagem */
+    max-width: 450px; /* Define o tamanho máximo da imagem */
     height: auto; /* Mantém a proporção da imagem */
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra à imagem */
@@ -125,7 +125,7 @@ nav a:hover {
 
 @media screen and (max-width: 768px) {
     .image-box {
-        width: 100%; /* Ajusta a largura para 100% em telas menores */
+        width: 50%; /* Ajusta a largura para 100% em telas menores */
         max-width: none; /* Remove o limite de largura */
     }
 }
@@ -136,7 +136,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     position: relative;
-    width: 100%;
+    width: 50%;
     bottom: 0;
 }
 
