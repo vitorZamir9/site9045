@@ -108,19 +108,26 @@ nav a:hover {
 }
 
 .info-image {
-    flex: 0 0 auto; /* Ajusta o tamanho do quadrado */
+    flex: 0 0 100%; /* Ajuste a largura para 100% em telas pequenas */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
-.info-image-content {
-    width: 100%; /* Largura total disponível */
-    max-width: 900px; /* Largura máxima do quadrado */
+.image-box {
+    width: 100%; /* Ajusta a largura para 100% */
+    max-width: 900px; /* Define o tamanho máximo da imagem */
     height: auto; /* Mantém a proporção da imagem */
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra à imagem */
+}
+
+@media screen and (max-width: 768px) {
+    .image-box {
+        width: 100%; /* Ajusta a largura para 100% em telas menores */
+        max-width: none; /* Remove o limite de largura */
+    }
 }
 
 footer {
