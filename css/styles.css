@@ -116,7 +116,7 @@ nav a:hover {
 }
 
 .image-box {
-    width: 100%; /* Ajusta a largura para 100% */
+    width: 25%; /* Ajusta a largura para 100% */
     max-width: 900px; /* Define o tamanho máximo da imagem */
     height: auto; /* Mantém a proporção da imagem */
     border: 1px solid #ccc;
